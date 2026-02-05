@@ -41,7 +41,7 @@ div.stButton > button:hover {
 
 # Load Model
 try:
-    model = pickle.load(open('pricewise_model.pkl', 'rb'))
+    model = pickle.load(open('model/pricewise_model.pkl', 'rb'))
 except:
     st.error("Model file not found. Please ensure 'pricewise_model.pkl' exists.")
     model = None
